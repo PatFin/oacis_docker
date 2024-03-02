@@ -1,1 +1,1 @@
-docker build -t oacis/oacisjupyterlab .
+docker build -t oacis/oacis_jupyterlab .
