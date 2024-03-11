@@ -10,6 +10,7 @@ WORKDIR /home/oacis
 ENV HOME /home/oacis
 COPY Pipfile /home/oacis/Pipfile
 COPY Pipfile.lock /home/oacis/Pipfile.lock
+COPY Example.ipynb /home/oacis/
 RUN git clone https://github.com/pyenv/pyenv.git ~/.pyenv \
     && echo 'export LC_ALL=C.UTF-8' >> ~/.bash_profile \
     && echo 'export LANG=C.UTF-8' >> ~/.bash_profile \
