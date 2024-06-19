@@ -4,7 +4,6 @@ services:
     image: oacis/oacis_jupyterlab:${OACIS_IMAGE_TAG:-latest}
     volumes:
       - ./Result:/home/oacis/oacis/public/Result_development
-      - ./../oacis_ssh:/home/oacis/.ssh:rw
       - ./JupyterFiles:/home/oacis/workbook:rw
     environment:
       - LOCAL_UID
